@@ -1,10 +1,3 @@
-int IN1=5;      // Left Motor Control
-int IN2=6;
-
-int IN3=9;      // Right Motor Control
-int IN4=10;
-
-const int SensorLeft = A0;     //Left TCRT5000
 const int SensorRight = A1;    //Right TCRT5000
 
 int SL;    //Left Line Follower
@@ -43,7 +36,7 @@ void bothMotorStart() {
     digitalWrite(IN2,LOW);
     digitalWrite(IN3,HIGH);
     digitalWrite(IN4,LOW);
-    Serial.write("Forward");
+    Serial.println("Forward");
 }
 
 void bothMotorBack() {
@@ -68,7 +61,7 @@ void turnLeft(){
     digitalWrite(IN2,HIGH);
     digitalWrite(IN3,HIGH);
     digitalWrite(IN4,LOW);
-    Serial.write("Turn Left");
+    Serial.println("Turn Left");
 }
  
 //모터A 정회전, 모터B 역회전
@@ -77,7 +70,7 @@ void turnRight(){
     digitalWrite(IN2,LOW);
     digitalWrite(IN3,LOW);
     digitalWrite(IN4,HIGH);
-    Serial.write("Turn Right");
+    Serial.println("Turn Right");
 }
  
 //모터A 정회전, 모터B Stop
@@ -95,7 +88,7 @@ void motorB_Rotation()
     digitalWrite(IN2,LOW);
     digitalWrite(IN3,HIGH);
     digitalWrite(IN4,LOW);
-    Serial.write("STOP");
+    Serial.println("STOP");
 }
  
 //모터A 역회전, 모터B Stop
