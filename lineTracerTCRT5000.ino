@@ -4,8 +4,8 @@ int IN2=6;
 int IN3=9;      // Right Motor Control
 int IN4=10;
 
-const int SensorLeft = 17;     //Left TCRT5000
-const int SensorRight = 18;    //Right TCRT5000
+const int SensorLeft = 3;     //Left TCRT5000
+const int SensorRight = 4;    //Right TCRT5000
 
 int SL;    //Left Line Follower
 int SR;    //Right Line Follower
