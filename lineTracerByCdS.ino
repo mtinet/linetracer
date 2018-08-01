@@ -29,7 +29,7 @@ void loop() {
     Serial.print("Left : ");
     Serial.print(SL);
     Serial.print("  Right : ");
-    Serial.println(SR);
+    Serial.print(SR);
 
     if (SL < 500 && SR < 500) {
       bothMotorStart();  
