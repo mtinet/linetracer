@@ -10,9 +10,7 @@ const int SensorRight = 18;    //Right TCRT5000
 int SL;    //Left Line Follower
 int SR;    //Right Line Follower
 
-
 void setup() {
-  
   pinMode(IN1,OUTPUT);
   pinMode(IN2,OUTPUT);
   pinMode(IN3,OUTPUT);
@@ -23,28 +21,20 @@ void setup() {
   Serial.begin(9600); 
 }
 
- 
 void loop() {
-
   while(1){
-  
     SL = digitalRead(SensorLeft);
     SR = digitalRead(SensorRight);
 
-    if (SL == LOW && SR == LOW)
-        bothMotorStart();  
-   
-
-      else if (SL == HIGH & SR == LOW)
-       turnRight();  
-
-      else if (SL == LOW & SR == HIGH)
-         turnLeft();        
-
-       else
-         stopAllMotor();
-        
-   
+    if (SL == LOW && SR == LOW) {
+      bothMotorStart();  
+    } else if (SL == HIGH & SR == LOW) {
+      turnRight();  
+    } else if (SL == LOW & SR == HIGH) {
+      turnLeft();        
+    } else {
+      stopAllMotor();
+    }
   }
 }
 
