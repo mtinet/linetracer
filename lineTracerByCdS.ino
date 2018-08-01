@@ -1,3 +1,4 @@
+const int SensorLeft = A0;
 const int SensorRight = A1;    //Right TCRT5000
 
 int SL;    //Left Line Follower
