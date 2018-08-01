@@ -1,3 +1,9 @@
+int IN1=5;      // Left Motor Control
+int IN2=6;
+
+int IN3=9;      // Right Motor Control
+int IN4=10;
+
 const int SensorLeft = A0;
 const int SensorRight = A1;    //Right TCRT5000
 
